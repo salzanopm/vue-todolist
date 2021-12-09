@@ -55,6 +55,7 @@ button {
 .todo {
     padding: 10px;
     border-bottom: 1px solid gray;  
+    cursor: pointer;
 }
 
 .done {

@@ -36,12 +36,16 @@ const app = new Vue (
                 },
                 {
                     text: 'Portare fuori il cane',
-                    done: true
+                    done: false
                 },
                 {
                     text: 'Fai la spesa per il cane',
-                    done: true
+                    done: false
                 },
+                {
+                    text: 'Fai fare la spesa al cane',
+                    done: false
+                }
                 
             ]
         },
