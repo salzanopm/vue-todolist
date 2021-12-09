@@ -22,6 +22,24 @@ header {
 }
 
 /* MAIN */
+.filters {
+    display: block;
+    text-align: center;
+}
+
+/* input */
+input {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
 .todo-container {
     width: 60%;
     margin: auto;

@@ -36,5 +36,5 @@ header {
 }
 
 .done {
-    background-color: yellowgreen;
+    text-decoration: line-through;
 }
