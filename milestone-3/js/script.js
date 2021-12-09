@@ -23,6 +23,7 @@ const app = new Vue (
     {
         el: '#root',
         data: {
+            newTodoText: '',
             todos: [
                 {
                     text: 'Fare la spesa',
@@ -42,6 +43,16 @@ const app = new Vue (
         methods:{
             deleteTodo: function(index) {
                 this.todos.splice(index, 1)
+            },
+            addNewTodo: function (){
+                const trimmedNewTodoText = this.newTodoText.trim()
+                this.todos.push(
+                    {
+                        text: trimmedNewTodoText,
+                        done: false
+                    }
+                );
+                this.newTodoText='';
             }
 
         }

@@ -21,8 +21,8 @@
             <!-- start filters container -->
             <div class="filters">
                 <div class="single-filter">
-                    <input type="text" placeholder="Nuova attività">
-                    <button>Aggiungi</button>
+                    <input v-model="newTodoText" type="text" placeholder="Nuova attività">
+                    <button @click="addNewTodo">Aggiungi</button>
                 </div>
             </div>
             <!-- end filters container-->
