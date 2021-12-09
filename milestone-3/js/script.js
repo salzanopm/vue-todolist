@@ -46,6 +46,7 @@ const app = new Vue (
             },
             addNewTodo: function (){
                 const trimmedNewTodoText = this.newTodoText.trim()
+                if (trimmedNewTodoText.length > 2) {
                 this.todos.push(
                     {
                         text: trimmedNewTodoText,
@@ -53,6 +54,7 @@ const app = new Vue (
                     }
                 );
                 this.newTodoText='';
+                }
             }
 
         }
