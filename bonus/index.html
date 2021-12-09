@@ -27,7 +27,7 @@
             </div>
             <!-- end filters container-->
             <div class="todo-container">
-                <ul>
+                <ul v-if="todos.length > 0">
                     <!-- ciclo for che gira su todos per ogni todo e chiedo anche indice per usarlo nel todo actions -->
                     <li 
                         @click="toggleDone(index)"
@@ -40,8 +40,9 @@
                         <div class="todo-actions">
                             <i @click="deleteTodo(index)" class="fas fa-times"></i>
                         </div>
-                    </li>
+                    </li>  
                 </ul>
+                <p v-else>Aggiungi una nuova attività!</p>
             </div>
         </main>
     </div>
