@@ -1,0 +1,40 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+header {
+    padding: 30px;
+}
+
+.logo {
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+/* MAIN */
+.todo-container {
+    width: 60%;
+    margin: auto;
+    background-color: #F5F7F7;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.todo {
+    padding: 10px;
+    border-bottom: 1px solid gray;  
+}
+
+.done {
+    background-color: yellowgreen;
+}
